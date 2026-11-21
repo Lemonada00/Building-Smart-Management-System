@@ -1,0 +1,1 @@
+revoke select on public.work_order_photos from authenticated; grant select(id,work_order_id,object_path,original_name,mime_type,size_bytes,uploader_id,state,position,created_at) on public.work_order_photos to authenticated;

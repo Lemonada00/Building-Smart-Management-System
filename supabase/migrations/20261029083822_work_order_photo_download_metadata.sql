@@ -1,0 +1,1 @@
+alter policy work_order_photo_download on storage.objects using(bucket_id='work-order-photos' and storage.allow_any_operation(array['storage.object.get_authenticated','object.get_authenticated_info','object.head_authenticated_info']) and private.photo_read_allowed(name));
